@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="aaa">
-      <h1>Todo App</h1>
+      <h1 class="visually-hidden">Todo App</h1>
       <img src="./eisenhower-matrix.jpg" alt="Example of Eisenhower matrix managing.">
       <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
@@ -23,15 +23,15 @@
         <h2>Todo</h2>
         <ul id="incompleteTasks">
           <li>
-            <input type="checkbox">
-            <span class="task">Pay Bills</span>
+            <input type="checkbox" id="task-checkbox">
+            <label class="task" for="task-checkbox">Pay Bills</label>
             <input type="text" class="task" aria-label="Edit task">
             <button class="edit">Edit</button>
             <button class="delete"><img src="./remove.svg" alt="Remove task"></button>
           </li>
           <li class="editMode">
-            <input type="checkbox">
-            <span class="task">Go Shopping</span>
+            <input type="checkbox" id="task-checkbox">
+            <label class="task" for="task-checkbox">Go Shopping</label>
             <input type="text" value="Go Shopping" class="task" aria-label="Edit task">
             <button class="edit">Save</button>
             <button class="delete"><img src="./remove.svg" alt="Remove task"></button>
@@ -42,8 +42,8 @@
         <h2>Completed</h2>
         <ul id="completed-tasks">
           <li>
-            <input type="checkbox" checked>
-            <span class="task">See the Doctor</span>
+            <input type="checkbox" id="task-checkbox" checked>
+            <label class="task" for="task-checkbox">See the Doctor</label>
             <input type="text" class="task" aria-label="Edit task">
             <button class="edit">Edit</button>
             <button class="delete"><img src="./remove.svg" alt="Remove task"></button>
